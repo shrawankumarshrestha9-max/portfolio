@@ -87,7 +87,7 @@ section p {
 }
 
 /* ===== HERO ===== */
-.hero {
+.hero { 
   text-align: center;
   padding: 100px 40px;
   background: #fff8f5;
@@ -102,7 +102,15 @@ section p {
   color: #ff6b35;
 }
 
-.hero p {
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6b35;
+}
+
+.hero p {x  
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 28px;
