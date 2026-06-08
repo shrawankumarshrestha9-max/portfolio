@@ -105,6 +105,8 @@ section p {
 .profile-img {
     width: 100px;
     height: 100px;
+    z-index: 1;
+    rotate: 90deg;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #ff6b35;
