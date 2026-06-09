@@ -22,39 +22,36 @@ a:hover {
 }
 
 /* ===== NAVBAR ===== */
-/* ===== NAVBAR ===== */
 nav {
   display: flex;
-  justify-content: space-between; /* Pushes left and right items apart */
+  justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
   background: #fff;
   border-bottom: 2px solid #4a2010;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
-/* Left side: Icon + Logo together */
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* Space between icon and logo */
+  gap: 12px;
 }
 
 .icon-img {
   width: 50px;
   height: 50px;
-  /* REMOVE the margin-right: 800px */
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   color: #728a0a;
 }
 
-/* Right side: Navigation links */
 nav ul {
   list-style: none;
   display: flex;
@@ -70,6 +67,7 @@ nav ul a:hover {
   color: #ff6b35;
   text-decoration: none;
 }
+
 /* ===== SECTIONS ===== */
 section {
   padding: 60px 40px;
@@ -117,12 +115,12 @@ section p {
 }
 
 .profile-img {
-    width: 300px;
-    height: 300px;
-    z-index: 1;
-    border-radius: 5%;
-    object-fit: cover;
-    border: 2px solid #e6d8d3;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 2px solid #e6d8d3;
 }
 
 .hero p {  
@@ -167,8 +165,6 @@ section p {
   margin-top: 16px;
   width: 180px;
 }
-
-
 
 .skill {
   background: #f3f6ec;
@@ -235,4 +231,269 @@ footer {
   background: #222;
   color: #aaa;
   font-size: 0.85rem;
+}
+
+/* =====================================================
+   RESPONSIVE MEDIA QUERIES
+   ===================================================== */
+
+/* ===== TABLETS (768px - 1024px) ===== */
+@media (max-width: 1024px) {
+  nav {
+    padding: 14px 30px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  nav ul {
+    gap: 18px;
+  }
+
+  section {
+    padding: 50px 30px;
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 80px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    width: 160px;
+  }
+
+  .card {
+    flex: 1 1 200px;
+  }
+}
+
+/* ===== MOBILE PHONES (up to 768px) ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+
+  .icon-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 14px;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .skill {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  .contact-links a {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== SMALL PHONES (up to 480px) ===== */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-left {
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  nav ul {
+    gap: 12px;
+    font-size: 0.85rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 35px 15px;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .skills-grid {
+    gap: 8px;
+  }
+
+  .skill {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .contact-links {
+    gap: 10px;
+  }
+
+  .contact-links a {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 18px;
+  }
+}
+
+/* ===== EXTRA SMALL PHONES (up to 360px) ===== */
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    gap: 8px;
+    font-size: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  .skill {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
 }
