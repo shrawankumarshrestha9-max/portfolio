@@ -6,97 +6,127 @@
   <title>Shrawan Shrestha | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="icon.png">
-<base target="_blank">
 </head>
 <body>
 
   <!-- NAVBAR -->
-<nav>
-  <div class="nav-left">
-    <img src="icon.png" alt="Portfolio" class="icon-img">
-    <div class="logo">ShraWan</div>
-  </div>
+  <nav>
+    <div class="nav-left">
+      <img src="icon.png" alt="Logo" class="icon-img">
+      <div class="logo">ShraWan</div>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <ul>
-    <li><a href="#About">About</a></li>
-    <li><a href="#Skills">Skills</a></li>
-    <li><a href="#Projects">Projects</a></li>
-    <li><a href="#Contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- HERO — 3-column layout -->
+  <div class="hero-wrapper">
 
-  <!-- TOP -->
-  <div class="top"> 
-    
-    <section class="hero">
-      <img src ="pp.jpg" alt="Portfolio" class="profile-img">
-    </section>
-    <section class="hero1">
-      <h1>Hi, I'm <span>Shrawan Shrestha</span></h1>
-      <p> BSc. CSIT Student   ||  Canva Designer  || Digital Marketing  </p>
-      <a href="#projects" class="btn outline">View My Work</a>
-      <a href="#contact" class="btn outline">Contact Me</a>
-      
-    </section>
+    <!-- LEFT: Role / Titles -->
+    <div class="hero-left">
+      <div class="role-badge">BSc. CSIT Student</div>
+      <div class="role-badge">Canva Designer</div>
+      <div class="role-badge">Digital Marketing</div>
+    </div>
+
+    <!-- MIDDLE: Profile Photo -->
+    <div class="hero-center">
+      <img src="pp.jpg" alt="Shrawan Shrestha" class="profile-img">
+    </div>
+
+    <!-- RIGHT: Name + CTA -->
+    <div class="hero-right">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Shrawan<br><span>Shrestha</span></h1>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="section-about">
+    <div class="container">
       <h2>About Me</h2>
-    <p>I'm a BSc. CSIT student from Nepal . Studying in New Summit College.I am intrested in Web Development , Canva Designing and Digital Marketing.
-    </p>
+      <div class="about-inner">
+        <p>
+          I'm a BSc. CSIT student at New Summit College, Nepal — passionate about Web Development,
+          Canva Designing, and Digital Marketing. I enjoy building clean, functional interfaces
+          and exploring creative solutions to real-world problems.
+        </p>
+        <p>
+          Currently in my early semesters, I'm actively working on personal projects and
+          looking for opportunities to grow through internships and collaborations.
+          When I'm not coding, you'll find me experimenting with design tools and photography.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="gray">
-    <h2><center>Capabilities</center></h2>
-    <div class="skills-grid">
-    
-      <div class="skill"> HTML & CSS</div>
-      <!-- <div class="skill">⚡ JavaScript</div> -->
-      <div class="skill"> Canva</div>
-      <div class="skill"> MySQL</div>
-      <div class="skill"> Git & GitHub</div>
+  <section id="skills" class="section-dark">
+    <div class="container">
+      <h2>Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML &amp; CSS</div>
+        <div class="skill">Canva</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Git &amp; GitHub</div>
+        <div class="skill">C / C++</div>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <h3>Student Management System</h3>
-        <p>Manage student records, grades, and attendance using Python and MySQL.</p>
-        <a href="#">View →</a>
-      </div>
-      <div class="card">
-        <h3>Personal Blog</h3>
-        <p>A responsive blog website built with HTML, CSS, and JavaScript.</p>
-        <a href="#">View →</a>
-      </div>
-      <div class="card">
-        <h3>Calculator App</h3>
-        <p>A GUI calculator built with Java Swing.</p>
-        <a href="#">View →</a>
+  <section id="projects" class="section-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <div class="card-tag">Python · MySQL</div>
+          <h3>Student Management System</h3>
+          <p>Manage student records, grades, and attendance with a full CRUD interface backed by MySQL.</p>
+          <a href="#" class="card-link">View →</a>
+        </div>
+        <div class="card">
+          <div class="card-tag">HTML · CSS · JS</div>
+          <h3>Personal Blog</h3>
+          <p>A responsive blog website with a clean layout, article listing, and smooth navigation.</p>
+          <a href="#" class="card-link">View →</a>
+        </div>
+        <div class="card">
+          <div class="card-tag">Java · Swing</div>
+          <h3>Calculator App</h3>
+          <p>A GUI calculator built with Java Swing featuring standard and scientific operations.</p>
+          <a href="#" class="card-link">View →</a>
+        </div>
       </div>
     </div>
-  </section>  
+  </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="gray">
-    <h2>Contact</h2>
-    <p>Feel free to reach out — I'm open to internships and collaborations!</p>
-    <p>+977 9769400796</p>
-    <div class="contact-links">
-      <a href="https://mail.google.com/mail/u/0/#inbox">📧 Email</a>
-      <a href="https://github.com/" target="_blank">💻 GitHub</a>
-      <a href="https://linkedin.com/" target="_blank">🔗 LinkedIn</a>
+  <section id="contact" class="section-dark">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="contact-sub">I'm open to internships and collaborations — feel free to reach out!</p>
+      <p class="contact-phone">📞 +977 9769400796</p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="contact-btn">📧 Email</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-btn">💻 GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="contact-btn">🔗 LinkedIn</a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p> Made by Shrawan Shrestha· 2026 · Nepal 🇳🇵</p>
+    <p>Made by Shrawan Shrestha &middot; 2026 &middot; Nepal 🇳🇵</p>
   </footer>
 
 </body>
